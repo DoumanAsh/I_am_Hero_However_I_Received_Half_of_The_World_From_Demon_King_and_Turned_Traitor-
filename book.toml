@@ -1,0 +1,9 @@
+[book]
+authors = ["DoumanAsh"]
+language = "en"
+multilingual = false
+src = "src"
+title = "I am Hero, However I Received Half of The World From Demon King and Turned Traitor"
+
+[output.html]
+additional-css = ["text-style.css"]
