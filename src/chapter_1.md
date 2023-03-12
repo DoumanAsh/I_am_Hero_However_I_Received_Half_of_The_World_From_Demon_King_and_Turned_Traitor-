@@ -20,13 +20,12 @@ trying to negotiate currently.
 Also, former Hero Party member were also at that place.
 Every one of these guys were also important people to this country so we brought them from Demon King Castle.
 
-[Well, then... Carriers of <ruby>Malkuth<rt>マルクト</rt></ruby> bloodline who rule over humans.
+[Well, then... Carriers of <ruby>Malkuth<rt>マルクト</rt></ruby> bloodline, who rule over humans.
 You have two choices.
 First, will you submit to my demands and live?
-Or would you rather, resist and die.]
+Or would you rather resist and die.]
 
-There in front of overbearing Demon King's gaze.
-There was human race princess, tied by ropes.
+There, in front of overbearing Demon King's gaze, was human race princess, tied by ropes.
 
 Her name is Merek Malkuth.
 She was lying on the ground.
@@ -38,21 +37,21 @@ Working me to the ground for miser reward, while drowning herself in pleasure.
 She was unforigable.
 
 [How can you be so cruel...
-What are you demanding of me, helpless and clueless?]
+What are you demanding of such helpless and innocent me?]
 
 She said with trembling voice.
-It might look like she is afraid, but it was just acting.
+It might look like she is afraid, but it was just her acting.
 This girl wasn't so innocent as to be scared.
 
 [Give your world.
-Hand over me yours human world.]
+Hand me over yours human world.]
 
 [S-suddenly killing my father and all of the sudden demanding of me such important decision...]
 
 By the way, the King, who was Merek's father, has been killed by the Demon King.
-Being fat as big and having such nasty personality, he was promptly killed it would seem.
+With him being fat as pig and having such nasty personality, it would seem he was promptly killed.
 
-[O, The Great King of demons... I beg you, grant your mercy to us pathetic humans]
+[O, The Great King of demons... I beg you, grant your mercy to us, pathetic humans]
 
 The Princess pleading in tears.
 Looking at her appearance, my cheeks twitched.
@@ -71,7 +70,7 @@ I had no need to worry, I guess?
 
 [Well, if you're not going to heed my demands, then I'm just going to destroy humanity.
 Which means you hold in your hands fate of the human race.
-Whether you kill, survive or do as you please... Well then, what are you going to do?]
+Whether you die, survive or do as you please... Well then, what are you going to do?]
 
 [...I cannot allow humanity to be erased from Sefirot!]
 
@@ -250,7 +249,7 @@ Princess looked as if I said something unbelievable.
 However for me 'such' is not the end of it.
 
 [Princess, you could at least fall in love with me.
-How much do you think I worked for you royalty?
+How much do you think I worked for you, the royalty?
 Also, Priest, aren't you my childhood friend?
 Why are you going out with Magician?
 Considering how hard I worked, normally you'd have some affection for me, don't you think?]
@@ -268,7 +267,7 @@ And you two, Warrior, Martial Artist, too.
 To put it simply this was toughest one for me.
 
 Who'd wish to hear how girl he likes was having sex with another guy,
-or having to hear juniors' voice doing their perverted play?
+or having to hear juniors' voice during their perverted play?
 Don't copulate every night, just die.
 
 ["I'm sorry, I cannot go out with Hero. After all I don't like your face..."
@@ -314,7 +313,7 @@ Deep breath.
 Calm down, I'm talking about frustrations I had until now.
 
 [If I'll be honest I was quite splendid hero, don't you think?.
-Despite misery rewards I had no complaints,
+Despite miserly reward I had no complaints,
 I didn't show my complaints about low leveled companions,
 I did my best not to be angry regardless of how I was treated...
 And you looked down on such me, aren't you?
@@ -379,7 +378,7 @@ She had no way out, so I pusher her further.
 [I want more.
 2,500 platinum coins.
 How is that?
-If you don't like it, then return half of the world to the Demon King]
+If you don't like it, then let's return half of the world to the Demon King]
 
 I must say I felt like I said something cruel.
 
