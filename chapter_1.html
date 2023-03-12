@@ -1,0 +1,486 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Chapter 1 - I am Hero, However I Received Half of The World From Demon King and Turned Traitor</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="text-style.css">
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="prologue.html"><strong aria-hidden="true">1.</strong> Prologue</a></li><li class="chapter-item expanded "><a href="chapter_1.html" class="active"><strong aria-hidden="true">2.</strong> Chapter 1</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">I am Hero, However I Received Half of The World From Demon King and Turned Traitor</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="chapter-1-i-got-half-of-the-world-so-i-decided-to-sell-it"><a class="header" href="#chapter-1-i-got-half-of-the-world-so-i-decided-to-sell-it">Chapter 1. I got half of the world, so I decided to sell it</a></h1>
+<p>After I joined forces with Demon King, Human Realm met its end in a blink of eye.</p>
+<p>First, my former companions who infiltrated the Demon King castle: Magician, Priest, Martial Artists and Warrior had been captured.
+Next, me and Demon King marched into Human Realm, rampaging through it as we pleased.</p>
+<p>Human Realm became like my playground.
+I provided various support on our road towards the Royal Castle.
+Losing their advantage humans were taken by surprise, before long they had no choice but to give up resistance.</p>
+<p>From the start, their main force was my Hero Party...
+Or should I say as they were dependent on my alone, we overwhelmed them in no time.</p>
+<p>And just like that me and Demon King driven Human Realm into corner.</p>
+<p>Royal family, their leaders and other important people were captured in the Royal Castle,
+trying to negotiate currently.</p>
+<p>Also, former Hero Party member were also at that place.
+Every one of these guys were also important people to this country so we brought them from Demon King Castle.</p>
+<p>[Well, then... Carriers of <ruby>Malkuth<rt>マルクト</rt></ruby> bloodline, who rule over humans.
+You have two choices.
+First, will you submit to my demands and live?
+Or would you rather resist and die.]</p>
+<p>There, in front of overbearing Demon King's gaze, was human race princess, tied by ropes.</p>
+<p>Her name is Merek Malkuth.
+She was lying on the ground.</p>
+<p>A big breasted princess with fluffy and wavy blond hair.
+She had a gentle, or rather neat appearance, but...
+She was a bitch who spent night after night doing erotic things handsome guy that caught her attention.
+Working me to the ground for miser reward, while drowning herself in pleasure.
+She was unforigable.</p>
+<p>[How can you be so cruel...
+What are you demanding of such helpless and innocent me?]</p>
+<p>She said with trembling voice.
+It might look like she is afraid, but it was just her acting.
+This girl wasn't so innocent as to be scared.</p>
+<p>[Give your world.
+Hand me over yours human world.]</p>
+<p>[S-suddenly killing my father and all of the sudden demanding of me such important decision...]</p>
+<p>By the way, the King, who was Merek's father, has been killed by the Demon King.
+With him being fat as pig and having such nasty personality, it would seem he was promptly killed.</p>
+<p>[O, The Great King of demons... I beg you, grant your mercy to us, pathetic humans]</p>
+<p>The Princess pleading in tears.
+Looking at her appearance, my cheeks twitched.</p>
+<p>[Whoah... Demon King, she only thinks about her own self-preservation, so no point in talking with her, don't you think?]</p>
+<p>The way she spoke, attempting to butter you up, was quite familiar to me.
+I remembered how she tricked me speaking in a similar manner.</p>
+<p>[But of course. I've gave but only two choices to her.
+She should know that any other answer will lead her to death.]</p>
+<p>Demon King agreed at my words of advice.
+It would seem she had no intention of listening to her.
+I had no need to worry, I guess?</p>
+<p>[Well, if you're not going to heed my demands, then I'm just going to destroy humanity.
+Which means you hold in your hands fate of the human race.
+Whether you die, survive or do as you please... Well then, what are you going to do?]</p>
+<p>[...I cannot allow humanity to be erased from Sefirot!]</p>
+<p>As one would expect, even corrupt princess couldn't accept extinction of human race.
+By the way, 'Sefirot' was a name given to the tree that that world was composed of.
+Also known as 'Tree of Life'.
+With its 10 branches it hosted 10 worlds.</p>
+<p><strong>TL Note:</strong> Tree of Life refers to https://en.wikipedia.org/wiki/Sefirot with name of worlds taken from name of nodes there.</p>
+<p>Various races ruled over these various worlds.</p>
+<p>10th world was [Malkuth], world of humans.
+Demons lived on the 1th world [Keter].</p>
+<p>All races fought for their dominance over other worlds.
+Neither humans or demons were exception, being in state of constant war since long ago.</p>
+<p>And today, demons achieved victory over humans.
+With Demon King currently trying to finish this war.</p>
+<p>[Choose. Will you die or will you surrender your world...
+What are you going to do?]</p>
+<p>[...There was no choice from the beginning, wasn't there?
+Thanks to someone's betrayal, everything is already over]</p>
+<p>With that Princess glared in my direction.</p>
+<p>For now let's ignore this spiteful gaze.
+Even I have a lot to say to her.
+However, right now is not the time.
+Demon King's negotiation takes priority.</p>
+<p>[Oi, what's with these eyes?
+Do you wish to be slaughtered?]</p>
+<p>[Of course not! I-i understand.
+I shall hand over human world to you]</p>
+<p>And at last Princess folded.
+Realizing she can do nothing about Demon King's firm attitude, she lowered her head, resigning herself.</p>
+<p>On other hand, Demon King nodded in satisfaction.</p>
+<p>[Well then, swear in the name of Sefirot: 'I shall give the Human World Malkuth to demons']</p>
+<p>Demon King commanded Princess.</p>
+<p>Vow under the name of Sefirot meant absolute compliance.
+There was no way to break it for anyone living on Sefirot.</p>
+<p>[In the name of Sefirot... I swear 'I shall give the Humand World Malkuth to demons']</p>
+<p>Princess Merek obediently declared the vow.</p>
+<p>With this, Human World truly became possession of demons
+It was a moment when long going war between demons and humans ended.</p>
+<p>With this ceremony, Human World Malkuth became property of Demon King.</p>
+<p>[Now, hero. Let us fulfill our agreement]</p>
+<p>Following that, Demon King gave vow in the name of Sefirot.</p>
+<p>[In the name of Sefirot I declare: I shall give half of the Human World Malkuth to the Hero]</p>
+<p>Right. It would seems she gave me half of the world, as she promised in Demon King castle.</p>
+<p>[...Hey]</p>
+<p>Hearing this vow, every one of the humans in this place were astonished.
+Was my actions so unexpected I wonder...?
+Well, not that it matters.</p>
+<p>I betrayed humanity.
+There was no point in considering their opinions.</p>
+<p>[Demon King... We're done here for now.
+Would you give me some time?
+I have something to say to them]</p>
+<p>There was something I wanted to say.
+I have something I need to convey to these people who had been my companions until now.</p>
+<p>[...Umu. I shall await outside.]</p>
+<p>Maybe out of consideration for me, Demon King silently nodded and exited outside.
+She understood my feelings.
+She was indeed kind girl.</p>
+<p>Hence in order to spend time with such charming girl without trouble, I had to draw line with these guys, my former companions.</p>
+<p>[Well then, Princess.
+There is one thing I'd like to ask]</p>
+<p>[...Traitorous scum]</p>
+<p>Oh, it would seem Princess revealed her true nature.
+She was glaring at me as if wanting to kill me.</p>
+<p>How scary.
+However, weak.
+For me who spent time fighting on front lines this level of killing intent was too weak.</p>
+<p>[No need to glare like that.
+Me and Princess are friends, aren't we?]</p>
+<p>I smiled back at her and said.</p>
+<p>[So, I have here half of the world, you know...
+How much are you going to give for it?]</p>
+<p>[Huh?]</p>
+<p>[I'm saying I have half of Malkuth.
+Depending on price, I'm willing to consider to sell it.]</p>
+<p>At my words Princess raised her brows as if puzzled.</p>
+<p>It would seem she couldn't understand my motive.</p>
+<p>That's why I had to properly say it.</p>
+<p>[Rather than world I want money!
+I decided to retire from hero stuff, and live leisurely by Demon King's side.
+For that purpose I need money...
+So hey, give your money.
+I'm selling here half of the world, so be thankful and buy it.]</p>
+<p>World had no meaning.
+From now on what I need is only money.</p>
+<p>Therefore, I baited Princess with half of the world, so I could take away her money.
+For me it was trash deal, but well this much is fine.</p>
+<p><strong>TL Note:</strong> Makes little sense considering he could just rob her and rest of the world literally, I know, but that's how it is.</p>
+<p>After all, no matter how much I worked, I was never rewarded until now.
+So I wanted to get at least a bit in return.</p>
+<p>[Despicable... Do you have no pride as hero!?]</p>
+<p>At my demand Princess Merek raised her voice.
+It would seem she is quite angry, but not like it is any concern of mine.</p>
+<p>[Something happened you know.
+Sorry, person I liked and made my lover changed her mind.
+Afterwards there was girl I liked who turned out to be bitch, so I was quite disappointed and turned traitor.]</p>
+<p>What a sad story.
+Well, I'm the only one who is sad though.</p>
+<p>[Why such heartlessness...
+Because of you Human World is done for!
+Why have you betrayed us?
+Just for what kind of reason you forsaken me and your companions!]</p>
+<p>There were quite shameless words.
+If I'd to give reasons, they are endless.</p>
+<p>However, to describe my feelings in single sentence it would be this.</p>
+<p>[Because you guy didn't pamper to me!]</p>
+<p>This was a focal point.</p>
+<p>[Just how much I achieved you think?
+How many times I had to put my life on the line you think?
+And for such person you guys didn't even have a slightest of gratitude!]</p>
+<p>[F-for such reason?]</p>
+<p>Princess looked as if I said something unbelievable.
+However for me 'such' is not the end of it.</p>
+<p>[Princess, you could at least fall in love with me.
+How much do you think I worked for you, the royalty?
+Also, Priest, aren't you my childhood friend?
+Why are you going out with Magician?
+Considering how hard I worked, normally you'd have some affection for me, don't you think?]</p>
+<p>Then, I turned towards the Priest.
+It seems she was shocked.</p>
+<p>[H-how, what do you mean going out?]</p>
+<p>Did you think I knew nothing of it...?</p>
+<p>At night... I could hear you panting, you know.
+And you two, Warrior, Martial Artist, too.</p>
+<p>To put it simply this was toughest one for me.</p>
+<p>Who'd wish to hear how girl he likes was having sex with another guy,
+or having to hear juniors' voice during their perverted play?
+Don't copulate every night, just die.</p>
+<p>[&quot;I'm sorry, I cannot go out with Hero. After all I don't like your face...&quot;
+Isn't that what you said, princess?]</p>
+<p>[Uhm, could you please not bring me up here?
+Although I did say that]</p>
+<p>[...Just why would I fall in love you, I wonder]</p>
+<p>I felt a bit like crying.
+Cannot even remember reason why I liked her.</p>
+<p>[Hero.
+I think you shouldn't do something like that just because your face is no good, you know?
+It is not too late to re-consider.]</p>
+<p>[Shut up, fucking Magician.
+How long are you planning to pretend to be like elder brother...
+Wait actually, you're supposed to be my elder brother, aren't you?
+And yet, you went out with your brother's loved one.]</p>
+<p><strong>TL Note:</strong> They are brothers in a sense like friends, rather than real blood brothers.</p>
+<p>I wonder why this second reason?
+Was I too blinded to see it as I was close enough to consider him my brother?</p>
+<p>[Warrior, Martial Artist,
+you're supposed to be my juniors, aren't you?
+The reason you were able to go in fight so far is me, isn't it?
+Yet you didn't thought to stop laughing behind my back?
+Regardless how unpopular am I with ladies, it is not good to make fun of me.]</p>
+<p>[...Well, senior's crude <span title="jp. アピール - as if making moves on opposite sex I suppose">appeal</span> is gross]</p>
+<p>[You think it is funny to see virgin being desperate, huh?]</p>
+<p>Ah, it is no good.
+I cannot say anything more.
+I put a lot of effort to be a good senior which was so stupid of me.</p>
+<p>Deep breath.
+Calm down, I'm talking about frustrations I had until now.</p>
+<p>[If I'll be honest I was quite splendid hero, don't you think?.
+Despite miserly reward I had no complaints,
+I didn't show my complaints about low leveled companions,
+I did my best not to be angry regardless of how I was treated...
+And you looked down on such me, aren't you?
+That's why I betrayed you.
+Abandoned you.
+Here we'll go on our separate ways]</p>
+<p>Meanings, this is our last farewell.</p>
+<p>[Hey, take out your money.
+You want half of this world, aren't you?
+The way things are you're going to end up as slaves to demons, you know?
+So tell me how much you can give]</p>
+<p>I walked towards Princess who was stirring ropes unable to free herself,
+leaned towards her to ask her.
+Her eyes were dark from all resentment.</p>
+<p>[If it wasn't for you...]</p>
+<p>[Hey, hey, you're showing your true character, you know?
+Well, if you don't like idea it is fine.
+I'm going to return my half of the world back to Demon King]</p>
+<p>[Wait! I got...
+I mean I understood you, please be so kind to sell me half of this world]</p>
+<p>And just like that Princess responded with cold voice.</p>
+<p>This somewhat distant and formal way of speaking made me feel like it was speaking of my separation from her and rest of humans.</p>
+<p>[1,500 platinum coins... How about it?]</p>
+<p>[1-1,500 you say...]</p>
+<p>This offer was outrageous amount.</p>
+<p>Oi, oi, with such amount you could live hundred times enjoying yourself.</p>
+<p>I never used such amount of moneys so I didn't really understand it, but it was quite a sum.</p>
+<p>However, since it is her initial offer, it means...
+She still has some room for negotiation, doesn't she?
+Just how much royal family saved?</p>
+<p>Thinking about that made me irritated.</p>
+<p>[Insufficient]</p>
+<p>I replied with one word.</p>
+<p>[However, this all our country coffers saved up, what I offer is my limit]</p>
+<p>[What are you talking about?
+As big shots, aren't you supposed to stash some money, too?]</p>
+<p>[T-thats...]</p>
+<p>Might as well take it all.
+She had no way out, so I pusher her further.</p>
+<p>[I want more.
+2,500 platinum coins.
+How is that?
+If you don't like it, then let's return half of the world to the Demon King]</p>
+<p>I must say I felt like I said something cruel.</p>
+<p>Honestly though...
+Part of wealthiest people in Humand World was so rotten that I felt it would lead to a better future if I take all of their wealth this time.</p>
+<p>Meaning, it is all my kindness!
+Let's roll with that.</p>
+<p>[Sh... Under-stood]</p>
+<p>Princess Merek feebly agreed to my demand.
+From her perspective, she had no choice but to listen to my words.</p>
+<p>Still, does she mean she has way to procure it?</p>
+<p>[Still as expected it is 2,500 platinum coins.
+Hey, quickly vow in the name of Sefirot]</p>
+<p>[B-bastard... I got it, damn it!
+I just have to do it, right!?
+In the name of Sefirot I swear: To pay 2,500 platinum coins to the Hero in exchange for half of the Human World 'Malkuth'!]</p>
+<p>[Good, very good.
+In the name of Sefirot, I swear: In exchange for 2,500 platinum coins, I shall give half of the Human World 'Malkuth' to he Princess Merek]</p>
+<p>With this we exchanged our vows.
+Vows under the name of Sefirot were absolute.</p>
+<p>Hence, bag, full of platinum coins, appeared in my hand.
+These was money gathered from all over the Human World under legal coercion</p>
+<p>[With this I no longer need to work]</p>
+<p>I'm leaving this place with smile, satisfied by weight of platinum coins I got.
+I no longer had anything to say to them.</p>
+<p>[Well, work hard to live!]</p>
+<p>Saying that, I turned my back to them.</p>
+<p>[You fiend... You'll pay for it!]</p>
+<p>Ignoring voice full of resentment behind me, I exited through the door.</p>
+<p>There was Demon King, waiting for me.</p>
+<p>[Did you finish your farewells?]</p>
+<p>[Yeah, it is done properly]</p>
+<p>[That's good... but, what is this bag?]</p>
+<p>[2,500 platinum coins. I got it in exchange for my half of the world]</p>
+<p>[What!? Did you just simply sell what I gave you!]</p>
+<p>[Now, now, isn't it fine...
+Rather let us hurry and return to Demon King Castle.
+I want to drink some delicious sake]</p>
+<p>[Good grief, you helpless guy.
+Still, I shall forgive you]</p>
+<p>Are you going to forgive me?
+Seems like Demon King wants to spoil me.
+Well if that's the case I thought I can depend on her and enjoy my life slowly.</p>
+<p>[Kuku... Okay, I'm going to prepare tasty sake.
+Tonight shall we enjoy drinks together?]</p>
+<p>After that Demon King casted teleportation magic, bringing me to the Demon King Castle.</p>
+<p>I parted with my past.
+From now one, I'm going start new life.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="prologue.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="prologue.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>

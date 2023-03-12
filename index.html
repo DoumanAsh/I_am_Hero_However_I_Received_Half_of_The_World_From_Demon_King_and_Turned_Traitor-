@@ -1,0 +1,342 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Prologue - I am Hero, However I Received Half of The World From Demon King and Turned Traitor</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="text-style.css">
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="prologue.html" class="active"><strong aria-hidden="true">1.</strong> Prologue</a></li><li class="chapter-item expanded "><a href="chapter_1.html"><strong aria-hidden="true">2.</strong> Chapter 1</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">I am Hero, However I Received Half of The World From Demon King and Turned Traitor</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="prologue-i-shall-give-you-half-of-the-world"><a class="header" href="#prologue-i-shall-give-you-half-of-the-world">Prologue. I shall give you half of the world!</a></h1>
+<p>Demong king was laughing with delight.</p>
+<p>[Kukuku... How good of you to come, Hero. I've been looking forward to our battle!]</p>
+<p>For someone named Demon King she had appearance of a rather adorable young girl,
+however despite that, she was definitely a ruler of vicious demons.
+She hold considerable power.</p>
+<p>[Still, unfortunately it appears that's going to be our last battle...
+Thinking about that, I cannot help but feel regret.]</p>
+<p>The fact that such girl recognized my worth made me a bit happy.</p>
+<p>[I hear you. I too was enjoying my fight with you...
+It is vexing to think this is going to be our last.]</p>
+<p>At main hall of the Demon King's castle.
+Me, the hero, responded with assent to words of the Demon King.</p>
+<p>In truth, I had no quarrel with Demon King.
+She was my enemy with whom I crossed swords multiple times.
+Through fighting her I came to understanding that she wasn't really a evil guy.</p>
+<p>Rather she was a magnificent ruler.
+Comparing to our human pig-king, she was quite a esteemed figure.</p>
+<p>That's why I feel regret now that this time has come.</p>
+<p>[It is last battle between Hero and Demon King... isn't?
+There is hatred between me and you. Yet is this what they call fate?]</p>
+<p>Subjugation of the Demon King.
+We, hero party, charged with this mission, assaulted Demon King's castle and challenged her to a decisive battle.
+And Demon King responded to that and engaged us with all of her strength.</p>
+<p>Composed of Hero, Magician, Priest, Martial Artist and Warrior our party finally arrived to the conclusion of our mortal struggle</p>
+<p>And at the current moment duel between me, Hero, and Demon King was finally about to start.</p>
+<p>Our long journey was also, finally, about to end.</p>
+<p>And even Demon King with whom we share destiny...
+Regardless of who shall be winner, without doubt only parting awaits us.</p>
+<p>We both understood that.
+Feeling reluctant about that, it was only natural that we felt a little emotional before our final battle.</p>
+<p>[To me you were a truly worthy rival...
+As a matter of fact, did you know that I fond of you more than even my subordinates?
+To a degree that I've been always looking forward to see you.]</p>
+<p>[...Oh ]</p>
+<p>However, Demong King was feeling rather strange.
+Her usual fearless smile was nowhere to be seen.</p>
+<p>[As I thought, ending my relationship with you here is too regrettable...]</p>
+<p>Now she was staring at me with a serious look.</p>
+<p>[Say, Hero... There is one proposal I'd like to make.]</p>
+<p>With firm resolution she said</p>
+<p>[I desire Hero. The thought of parting our ways breaks my heart.]</p>
+<p>Hearing that, I opened my eyes wide without thinking.
+Because what would follow is words that Demong King should not be saying.</p>
+<p>[I shall give half of the world to the Hero.
+That's why, join me!]</p>
+<p>And then, to me, the Hero, for whom such request ought to be impossible, she said next.</p>
+<p>[Let us walk together from now on.
+Not as enemy, but ally... Nah, our relationship should become even more, I want to spend every day in joy with you Hero.
+Please, will you stand by my side?]</p>
+<p>Hearing her, I clenched my fists.</p>
+<p>[!」</p>
+<p>I recalled my journey so far.</p>
+<p>There was great deal of hardships.
+And countless absurdities.</p>
+<p>Nevertheless, there were companions with whom we shared smile.
+And many many people who had expectations of me.
+To betray these people - something I couldn't do</p>
+<p>There was time when I thought so.</p>
+<p>[Are you serious? And giving me half of it!? Yes, I'm gladly joining hands with you!]</p>
+<p>I've lost to Demon King's temptation.</p>
+<p>After all, it is giving me half of the world we're talking about.
+To me there was no reason not to accept it.</p>
+<p>[R-really!? Hero, are you really going to join me?]</p>
+<p>She was completely surprised as she didn't expect me to heed the Demon King's request.</p>
+<p>[I-i am not sure if I'm the one to talk about it...
+But is it really fine, you know Hero's pride and duty?]</p>
+<p>She started talking about some nonsense.
+Demon King not supposed to worry about such things.</p>
+<p>[Pride? What's that, is it something tasty? I don't care about duty whatsoever.
+In first place it wasn't my choice to become the Hero.
+I've been made Hero against my will.]</p>
+<p>That's right. I never wanted to become Hero.
+As there was no one but me who could be the Hero, so I had no choice but to become one.
+It wasn't like I was doing it because I wanted.</p>
+<p>[Moreover, even if I defeat you, what do you think I'll get out of it?
+Just honor of 'saving human world', isn't it?
+So obviously I'd be happy to get half of the world instead.]</p>
+<p>[W-well... Still, there ought to be some reward.
+Defeating me, the Demon King, wouldn't it yield you some position and authority to at least spend your life without troubles?]</p>
+<p>[Eh? I'm not getting anything of sorts... That rotten royal family obviously gonna give some miserly reward.
+That's why I'm joining hands with you.
+No, I want to join]</p>
+<p>[T-then... Well, what about companions? Wouldn't they be sad?]</p>
+<p>[There is no way they gonna be sad!!]</p>
+<p>This was the moment when I raised my voice to highest today.</p>
+<p>Because of these words I've been reminded of certain fact.</p>
+<p>[Did you know? I'm in fact... Was childhood friends with the Priest.
+I wanted to marry her, so I worked hard during our journey.
+But you know, the Priest was actually going out with the Magician.</p>
+<p>[Ah...]</p>
+<p>[You probably guessed, right?
+That's right I'm getting in their way!
+Moreover, Martial Artist and Warrior were dating in secret from me, you know!?
+I'm serious, there is no place in this party.]</p>
+<p>Once I started talking, I couldn't stop.</p>
+<p>Before I knew, I was, as if erupting, yelling out all resentment that I've accumulated.</p>
+<p>[Even this final battle, indeed it might feel like my companions sacrificed themself so that I could move forward,
+but in fact it is different, you know!?
+These guys just left me alone in Demon King's castle and went on somewhere, so I had no choice but to move on my own!]</p>
+<p>That's right. These companions would be better off dead.
+Leaving me behind and becoming normie, these guys are no companions.</p>
+<p>[Moreover, the Princess, for whom I worked so hard and who was saying how she expects things of me, turned out to be just some bitch, you know!?
+Fuck, leading me on with these suggestive words... How much do you think I hoped for!?
+Me fighting for Princess's smile before?
+Thinking about it now I wish just to kill my past self.]</p>
+<p>My grudge against Princess who used me as she pleased, was so big that I wish never see her face again.</p>
+<p>As Hero, I put my life on the line and worked hard...
+Hoping one day, well, wouldn't we start going out?
+I was thinking such bullshit.</p>
+<p>Things like who should I marry in future: Priest or Princess.
+Or like why not marry both of them, my past thinking about these stupid things should be just my dark history.</p>
+<p>[Even masses who I protected would make fun of me because my face somehow is not right.
+Saying stuff like even though I'm hero, I'm average (laughingly), mind your business, idiots!!
+On other hand, my companions were all on beautiful side.
+And even though I worked harder than anyone else there were times when people praised my companions only...
+By that point I already had no idea what I'm fighting for.]</p>
+<p>Then I realized.
+I had nothing.
+I realized that: things that I wanted to protect, happiness that I should have obtained, all was nothing more than illusion.
+I understood that even if I work hard, I'm not going to be rewarded in this life.</p>
+<p>[For me, the Demong King was the only solace I had.
+Whenever we meet, you remained the same.
+You acknowledged me, fought me with all of your strength, it was true joy.
+And such person I wish to join.]</p>
+<p>That's why I was sincerely happy about Demong King needing me.</p>
+<p>Her, who recognized me, words strongly moved me.</p>
+<p>I couldn't help but to cling to her hand that reached out to me.</p>
+<p>[I too wish to fight together with Demon King...]</p>
+<p>At my words, Demong King cried</p>
+<p>[Sniff-Sniff... Hero, you had a hard life...]</p>
+<p>It would seem I had her sympathy.</p>
+<p>Her kindness touched me.
+That's right, Demong King... I had hard life.</p>
+<p>[R-really? Is it ok? Will you join forces with me?
+Then I'm happy... Then I too shall swear to bring happiness to the hero!
+You shall be happy by my side!
+From now on, this mission will become Hero's duty.
+Make sure to follow it through, got it?]</p>
+<p>[Being able to be by Demon King's side, is more than enough for me to be happy I think.]</p>
+<p>[Then come to my side! Until now you've been working hard enough, you shall become happy from now on]</p>
+<p>Demon King gently embraced me.
+This warmth made want to cry.</p>
+<p>[Thank you, Demon King...]</p>
+<p>I too once more embraced her firmly.</p>
+<p>Even though she is ruler of villainous demons, her body smelled good.
+And her body was so soft.
+Hugging her made felt extremely good.</p>
+<p>Even if she was Demon King, as woman she was quite attractive girl.
+Well, with looks of little girl though.</p>
+<p>I decided to pledge allegiance to such girl.</p>
+<p>I am Hero, however I received half of the world from Demon King and turned traitor.</p>
+<p>I'll achieve happiness by her side!</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+                            <a rel="next" href="chapter_1.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+                    <a rel="next" href="chapter_1.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>
